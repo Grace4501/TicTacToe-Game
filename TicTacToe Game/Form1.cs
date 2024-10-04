@@ -7,6 +7,7 @@ namespace TicTacToe_Game
         {
             X, O
         }
+        Player CurrentPlayer;
         public Form1()
         {
             InitializeComponent();
