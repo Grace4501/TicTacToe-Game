@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             PlayerWinCount = new Label();
             CPUWinCount = new Label();
@@ -43,6 +44,7 @@
             button10 = new Button();
             button11 = new Button();
             RestartGameBtn = new Button();
+            CPUTimer = new System.Windows.Forms.Timer(components);
             SuspendLayout();
             // 
             // PlayerWinCount
@@ -76,6 +78,7 @@
             button1.TabIndex = 2;
             button1.Text = "?";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += PlayerClickButton;
             // 
             // button2
             // 
@@ -86,6 +89,7 @@
             button2.TabIndex = 3;
             button2.Text = "?";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += PlayerClickButton;
             // 
             // button3
             // 
@@ -96,6 +100,7 @@
             button3.TabIndex = 4;
             button3.Text = "?";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += PlayerClickButton;
             // 
             // button4
             // 
@@ -106,6 +111,7 @@
             button4.TabIndex = 7;
             button4.Text = "?";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += PlayerClickButton;
             // 
             // button5
             // 
@@ -116,6 +122,7 @@
             button5.TabIndex = 6;
             button5.Text = "?";
             button5.UseVisualStyleBackColor = true;
+            button5.Click += PlayerClickButton;
             // 
             // button6
             // 
@@ -126,6 +133,7 @@
             button6.TabIndex = 5;
             button6.Text = "?";
             button6.UseVisualStyleBackColor = true;
+            button6.Click += PlayerClickButton;
             // 
             // button7
             // 
@@ -136,6 +144,7 @@
             button7.TabIndex = 10;
             button7.Text = "?";
             button7.UseVisualStyleBackColor = true;
+            button7.Click += PlayerClickButton;
             // 
             // button8
             // 
@@ -146,6 +155,7 @@
             button8.TabIndex = 9;
             button8.Text = "?";
             button8.UseVisualStyleBackColor = true;
+            button8.Click += PlayerClickButton;
             // 
             // button9
             // 
@@ -156,6 +166,7 @@
             button9.TabIndex = 8;
             button9.Text = "?";
             button9.UseVisualStyleBackColor = true;
+            button9.Click += PlayerClickButton;
             // 
             // button10
             // 
@@ -191,6 +202,12 @@
             RestartGameBtn.TabIndex = 13;
             RestartGameBtn.Text = "Restart Game";
             RestartGameBtn.UseVisualStyleBackColor = false;
+            RestartGameBtn.Click += RestartGame;
+            // 
+            // CPUTimer
+            // 
+            CPUTimer.Interval = 1000;
+            CPUTimer.Tick += CPUMove;
             // 
             // Form1
             // 
@@ -234,5 +251,6 @@
         private Button button10;
         private Button button11;
         private Button RestartGameBtn;
+        private System.Windows.Forms.Timer CPUTimer;
     }
 }
