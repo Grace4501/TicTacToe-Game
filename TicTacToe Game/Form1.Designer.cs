@@ -35,12 +35,12 @@
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
-            button4 = new Button();
-            button5 = new Button();
             button6 = new Button();
-            button7 = new Button();
-            button8 = new Button();
+            button5 = new Button();
+            button4 = new Button();
             button9 = new Button();
+            button8 = new Button();
+            button7 = new Button();
             button10 = new Button();
             button11 = new Button();
             RestartGameBtn = new Button();
@@ -50,24 +50,24 @@
             // PlayerWinCount
             // 
             PlayerWinCount.AutoSize = true;
-            PlayerWinCount.Font = new Font("Summer Dream Sans Demo", 10.2F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            PlayerWinCount.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Italic, GraphicsUnit.Point, 0);
             PlayerWinCount.ForeColor = Color.LimeGreen;
             PlayerWinCount.Location = new Point(69, 148);
             PlayerWinCount.Name = "PlayerWinCount";
-            PlayerWinCount.Size = new Size(138, 26);
+            PlayerWinCount.Size = new Size(104, 20);
             PlayerWinCount.TabIndex = 0;
-            PlayerWinCount.Text = "Player Win:";
+            PlayerWinCount.Text = "Player Wins:";
             // 
             // CPUWinCount
             // 
             CPUWinCount.AutoSize = true;
-            CPUWinCount.Font = new Font("Summer Dream Sans Demo", 10.8F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            CPUWinCount.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Italic, GraphicsUnit.Point, 0);
             CPUWinCount.ForeColor = Color.Red;
             CPUWinCount.Location = new Point(507, 147);
             CPUWinCount.Name = "CPUWinCount";
-            CPUWinCount.Size = new Size(104, 27);
+            CPUWinCount.Size = new Size(98, 22);
             CPUWinCount.TabIndex = 1;
-            CPUWinCount.Text = "CPU Win:";
+            CPUWinCount.Text = "CPU Wins:";
             // 
             // button1
             // 
@@ -102,16 +102,16 @@
             button3.UseVisualStyleBackColor = true;
             button3.Click += PlayerClickButton;
             // 
-            // button4
+            // button6
             // 
-            button4.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button4.Location = new Point(420, 327);
-            button4.Name = "button4";
-            button4.Size = new Size(139, 132);
-            button4.TabIndex = 7;
-            button4.Text = "?";
-            button4.UseVisualStyleBackColor = true;
-            button4.Click += PlayerClickButton;
+            button6.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button6.Location = new Point(420, 327);
+            button6.Name = "button6";
+            button6.Size = new Size(139, 132);
+            button6.TabIndex = 7;
+            button6.Text = "?";
+            button6.UseVisualStyleBackColor = true;
+            button6.Click += PlayerClickButton;
             // 
             // button5
             // 
@@ -124,27 +124,27 @@
             button5.UseVisualStyleBackColor = true;
             button5.Click += PlayerClickButton;
             // 
-            // button6
+            // button4
             // 
-            button6.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button6.Location = new Point(130, 327);
-            button6.Name = "button6";
-            button6.Size = new Size(139, 132);
-            button6.TabIndex = 5;
-            button6.Text = "?";
-            button6.UseVisualStyleBackColor = true;
-            button6.Click += PlayerClickButton;
+            button4.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button4.Location = new Point(130, 327);
+            button4.Name = "button4";
+            button4.Size = new Size(139, 132);
+            button4.TabIndex = 5;
+            button4.Text = "?";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += PlayerClickButton;
             // 
-            // button7
+            // button9
             // 
-            button7.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button7.Location = new Point(419, 465);
-            button7.Name = "button7";
-            button7.Size = new Size(139, 132);
-            button7.TabIndex = 10;
-            button7.Text = "?";
-            button7.UseVisualStyleBackColor = true;
-            button7.Click += PlayerClickButton;
+            button9.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button9.Location = new Point(419, 465);
+            button9.Name = "button9";
+            button9.Size = new Size(139, 132);
+            button9.TabIndex = 10;
+            button9.Text = "?";
+            button9.UseVisualStyleBackColor = true;
+            button9.Click += PlayerClickButton;
             // 
             // button8
             // 
@@ -157,16 +157,16 @@
             button8.UseVisualStyleBackColor = true;
             button8.Click += PlayerClickButton;
             // 
-            // button9
+            // button7
             // 
-            button9.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button9.Location = new Point(130, 465);
-            button9.Name = "button9";
-            button9.Size = new Size(139, 132);
-            button9.TabIndex = 8;
-            button9.Text = "?";
-            button9.UseVisualStyleBackColor = true;
-            button9.Click += PlayerClickButton;
+            button7.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button7.Location = new Point(130, 465);
+            button7.Name = "button7";
+            button7.Size = new Size(139, 132);
+            button7.TabIndex = 8;
+            button7.Text = "?";
+            button7.UseVisualStyleBackColor = true;
+            button7.Click += PlayerClickButton;
             // 
             // button10
             // 
@@ -217,12 +217,12 @@
             Controls.Add(RestartGameBtn);
             Controls.Add(button11);
             Controls.Add(button10);
-            Controls.Add(button7);
-            Controls.Add(button8);
             Controls.Add(button9);
-            Controls.Add(button4);
-            Controls.Add(button5);
+            Controls.Add(button8);
+            Controls.Add(button7);
             Controls.Add(button6);
+            Controls.Add(button5);
+            Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -242,12 +242,12 @@
         private Button button1;
         private Button button2;
         private Button button3;
-        private Button button4;
-        private Button button5;
         private Button button6;
-        private Button button7;
-        private Button button8;
+        private Button button5;
+        private Button button4;
         private Button button9;
+        private Button button8;
+        private Button button7;
         private Button button10;
         private Button button11;
         private Button RestartGameBtn;
